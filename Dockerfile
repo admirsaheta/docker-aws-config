@@ -8,10 +8,10 @@ RUN apt-get update && apt-get install -y \
     wget \
     python3 \
     python3-pip \
+    gettext-base \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Yarn
-RUN npm install -g yarn
+
 
 # Install AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
